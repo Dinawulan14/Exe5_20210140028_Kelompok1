@@ -38,7 +38,15 @@ namespace Exe5_20210140028_Kelompok1
         }
         public void delete()
         {
-            
+            if (Dina == null)
+            {
+                Console.WriteLine("Tidak ada data dalam antrian!");
+                return;
+            }
+            Dina = Dina.next;
+            if (Dina == null)
+                Sari = null;
+
         }
 
         }
