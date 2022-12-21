@@ -108,7 +108,7 @@ namespace Exe5_20210140028_Kelompok1
                 catch
                 {
                     Console.WriteLine("Silahkan periksa kembali data yang kamu masukkan!");
-                }
+                } 
                     }
                 }
             }
