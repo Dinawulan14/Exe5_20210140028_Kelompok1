@@ -46,8 +46,20 @@ namespace Exe5_20210140028_Kelompok1
             Dina = Dina.next;
             if (Dina == null)
                 Sari = null;
-
         }
-
+        public void display()
+        {
+            if (Dina == null)
+            {
+                Console.WriteLine("Tidak ada data dalam antrian!");
+                return;
+            }
+            Node display;
+            for (display = Dina; display != null; display = display.next)
+                Console.WriteLine(display.nama);
         }
     }
+    class Program
+    {
+    }
+}
