@@ -63,7 +63,35 @@ namespace Exe5_20210140028_Kelompok1
     {
         static void Main(string[] args)
         {
-            
+            queue qw = new queue();
+            char ch;
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine("menu");
+                    Console.WriteLine("1. Implement insert operation");
+                    Console.WriteLine("2. Implement delete operation");
+                    Console.WriteLine("3. Display values");
+                    Console.WriteLine("4. Exit");
+                    Console.Write("\nEnter your choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                Console.Write("Enter a number: ");
+                                int num = Convert.ToInt32(System.Console.ReadLine());
+                                Console.WriteLine();
+                                qw.insert(num);
+                            }
+                            break;
+
+
+                    }
+                }
+            }
         }
     }
 }
