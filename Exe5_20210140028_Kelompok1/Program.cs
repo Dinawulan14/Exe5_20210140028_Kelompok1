@@ -84,14 +84,33 @@ namespace Exe5_20210140028_Kelompok1
                                 Console.Write("Enter a number: ");
                                 int num = Convert.ToInt32(System.Console.ReadLine());
                                 Console.WriteLine();
-                                qw.insert(num);
+                                qw.insert();
                             }
                             break;
-
+                        case '2':
+                            {
+                                qw.delete();
+                            }
+                            break;
+                        case '3':
+                            {
+                                qw.display();
+                            }
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid option!!");
+                            }
+                            break;
+                    }
+                }
+                catch
+                { }
 
                     }
                 }
             }
         }
-    }
-}
+ 
