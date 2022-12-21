@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Exe5_20210140028_Kelompok1
 {
-    internal class Program
+    class Node
     {
-        static void Main(string[] args) 
+        public string nama;
+        public Node next;
+    }
+    class queue
+    {
+        Node Dina, Sari;
+        public queue()
         {
+            Dina = null
         }
     }
-}
