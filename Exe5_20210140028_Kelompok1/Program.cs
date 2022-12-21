@@ -16,6 +16,9 @@ namespace Exe5_20210140028_Kelompok1
         Node Dina, Sari;
         public queue()
         {
-            Dina = null
+            Dina = null;
+            Sari = null;
+        }
+
         }
     }
