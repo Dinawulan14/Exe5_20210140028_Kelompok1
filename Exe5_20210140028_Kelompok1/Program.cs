@@ -34,8 +34,9 @@ namespace Exe5_20210140028_Kelompok1
                 return;
             }
             Sari.next = newnode;
-
+            Sari.next = newnode;
         }
+
 
         }
     }
