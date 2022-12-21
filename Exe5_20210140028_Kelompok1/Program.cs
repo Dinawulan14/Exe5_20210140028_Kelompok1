@@ -61,5 +61,9 @@ namespace Exe5_20210140028_Kelompok1
     }
     class Program
     {
+        static void Main(string[] args)
+        {
+            
+        }
     }
 }
