@@ -36,7 +36,10 @@ namespace Exe5_20210140028_Kelompok1
             Sari.next = newnode;
             Sari.next = newnode;
         }
-
+        public void delete()
+        {
+            
+        }
 
         }
     }
