@@ -43,6 +43,8 @@ namespace Exe5_20210140028_Kelompok1
                 Console.WriteLine("Tidak ada data dalam antrian!");
                 return;
             }
+            Console.WriteLine("Data yang dihapus dari antrian : " + Dina.nama);
+            Console.ReadKey();
             Dina = Dina.next;
             if (Dina == null)
                 Sari = null;
@@ -57,6 +59,8 @@ namespace Exe5_20210140028_Kelompok1
             Node display;
             for (display = Dina; display != null; display = display.next)
                 Console.WriteLine(display.nama);
+            Console.WriteLine("\nTekan 'Enter' untuk melanjutkan Program");
+            Console.ReadKey();
         }
     }
     class Program
@@ -69,6 +73,7 @@ namespace Exe5_20210140028_Kelompok1
             {
                 try
                 {
+                    Console.Clear();
                     Console.WriteLine("menu");
                     Console.WriteLine("1. Implement insert operation");
                     Console.WriteLine("2. Implement delete operation");
@@ -80,22 +85,16 @@ namespace Exe5_20210140028_Kelompok1
                     switch (ch)
                     {
                         case '1':
-                            {
-                                Console.Write("Enter a number: ");
-                                int num = Convert.ToInt32(System.Console.ReadLine());
-                                Console.WriteLine();
+                                Console.Clear();
                                 qw.insert();
-                            }
                             break;
                         case '2':
-                            {
+                                Console.Clear();
                                 qw.delete();
-                            }
                             break;
                         case '3':
-                            {
+                                Console.Clear();
                                 qw.display();
-                            }
                             break;
                         case '4':
                             return;
@@ -107,8 +106,9 @@ namespace Exe5_20210140028_Kelompok1
                     }
                 }
                 catch
-                { }
-
+                {
+                    Console.WriteLine("Silahkan periksa kembali data yang kamu masukkan!");
+                }
                     }
                 }
             }
